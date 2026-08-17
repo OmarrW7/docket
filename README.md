@@ -47,8 +47,8 @@ User-task relationships are handled through Laravel's Eloquent ORM, allowing eac
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/your-username/docket.git
-    cd task-manager-laravel
+    git clone https://github.com/OmarrW7/docket.git
+    cd docket
     ```
 
 2. Install PHP dependencies

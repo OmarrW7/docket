@@ -47,7 +47,7 @@ User-task relationships are handled through Laravel's Eloquent ORM, allowing eac
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/your-username/task-manager-laravel.git
+    git clone https://github.com/your-username/docket.git
     cd task-manager-laravel
     ```
 
@@ -82,9 +82,9 @@ User-task relationships are handled through Laravel's Eloquent ORM, allowing eac
     Create a MySQL database and update the database configuration in `.env`:
 
     ```env
-    DB_DATABASE=task_manager_laravel
+    DB_DATABASE=your_database_name
     DB_USERNAME=root
-    DB_PASSWORD=
+    DB_PASSWORD=your_database_password
     ```
 
 6. Run migrations and seed the database

@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300 900;
+    font-style: normal;
+}
+
+body {
+  @apply bg-gray-100 text-gray-700;
+  font-family: "Rubik";
+}
+h1 {
+  @apply text-2xl font-bold text-red-500;
+}
+h2 {
+  @apply text-xl font-bold my-4;
+}
+h3 {
+  @apply text-lg font-bold my-4;
+}
+ul {
+  @apply my-10;
+}
+p {
+  @apply my-2;
+}
+
+/* header */
+header {
+  @apply bg-white;
+
+  nav {
+    @apply flex items-center gap-5 max-w-screen-lg px-12 py-4 mx-auto;
+  }
+  h1 {
+    @apply mr-auto;
+  }
+}
+
+/* form elements */
+form {
+  @apply max-w-screen-sm;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  @apply block w-full mt-2 mb-4 p-2;
+}
+
+/* custom classes */
+.container {
+  @apply max-w-screen-lg mx-auto px-12 py-8;
+}
+.card {
+  @apply bg-white rounded border border-gray-200 px-3 py-3 my-2 flex justify-between items-center;
+}
+.highlight-high {
+    @apply border-l-4 border-l-red-500;
+}
+
+.highlight-medium {
+    @apply border-l-4 border-l-yellow-500;
+}
+
+.highlight-low {
+    @apply border-l-4 border-l-green-500;
+}
+.btn {
+  @apply rounded px-3 py-2 bg-gray-200 hover:bg-red-500 hover:text-white;
+}
